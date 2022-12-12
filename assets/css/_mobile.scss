@@ -1,0 +1,145 @@
+@media(max-width: 600px) {
+
+    nav {
+
+        .sm-hidden {
+            display: block;
+        }
+
+        .lg-hidden {
+            display: grid;
+        }
+
+        .nav_right {
+            margin-top: 10rem;
+            flex-direction: column;
+            width: 60%;
+            position: absolute;
+            gap: 4rem;
+            height: 80vh;
+            background: $almost-white;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            flex: 0;
+            padding-top: 2rem;
+            align-items: flex-start;
+            justify-content: initial;
+            transform: translateX(300px);
+            transition: all 0.1s ease-in-out;
+
+
+            .nav_cta {
+                flex-direction: column;
+                padding-left: 2rem;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .nav-list {
+                margin: 0;
+                padding-left: 2rem;
+
+                .drop_down {
+                    flex-direction: column;
+                }
+            }
+
+            .nav-links {
+                margin: 1rem 0;
+            }
+        }
+
+        .mobile-menu {
+            justify-content: flex-end;
+        }
+    }
+
+
+    .hero-section {
+        padding-top: 2rem;
+
+        .hero-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .left-hero {
+                order: 2;
+            }
+
+            .right-hero {
+                order: 1;
+            }
+
+            .hero-btn {
+                margin: 0 auto;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 3rem;
+            text-align: center;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                line-height: 1;
+                margin-bottom: 2.5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                width: 100%;
+                margin-bottom: 3rem;
+                font-weight: 600;
+            }
+        }
+
+        .hero-logos {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            order: 5;
+            margin: 2rem 0;
+
+            img {
+                width: 65px;
+            }
+        }
+
+    }
+
+    .drop_down {
+        margin-bottom: 1.5rem;
+    }
+
+    .drop_down_content {
+        padding: 0;
+        position: relative;
+        display: none;
+        z-index: 1;
+        top: 0;
+        left: 20%;
+        background: #fff;
+        box-shadow: none;
+        
+
+        li {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    .nav_right .open {
+        transform: translateX(0);
+    }
+
+
+}
